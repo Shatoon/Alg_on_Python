@@ -2,7 +2,7 @@ N = int(input()) # Вводится количество студентов
 
 student_list = [[] for i in range(N)] # Создаем список студентов с пустыми списками их оценок, где N - Количество вложенных списков
 
-def grades_list(N, student_list): # Ф-ция формирует список успеваемости "grades list"
+def grades_list(student_list): # Ф-ция формирует список успеваемости "grades list"
     while True:
         x = input()
         
@@ -25,7 +25,17 @@ def revers_sort(l): # Ф-ция возвращает сумму чисел из 
     else: # Иначе
         return l # Вернуть значениеединого элемента
 
-grades_list(N, student_list)
-student_list.sort(key=revers_sort, reverse=True)
+def revers_sort_in_list(l): # Ф-ция реверсной сортировки вложенных списков по сумме их элементов
+    for i in range(len(l)): # Итерация через длинну основного списка
+        l[i].sort(reverse=True) # каждый элемент списка сортируем от большего к меньшему
+    return l # Возвращаем список в отсортированном виде
 
-print(student_list)
+grades_list(student_list) # Запускаем ф-цию получения списка
+
+student_list.sort(key=revers_sort, reverse=True) # Сортируем список по убыванию ллюч"key=revers_sort"
+
+revers_sort_in_list(student_list) # Запускаем ф-цию реверсной сортировки вложенных списков
+
+student_list = [str(j) for i in student_list for j in i] # Выносим элементы вложенных списков в основной список
+
+print(" " . join(student_list)) # Выводим на печать все элементы списка в одну строку, методом ".join"
