@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 Быстрое возведение в степень(Fast exponentiation)
 
@@ -32,6 +33,6 @@ def f_exp(a:float, n:int):
     elif n % 2 == 1: # Для n - нечетных
         return f_exp(a, n - 1) * a
     else: # Для n - четных
-        return f_exp(a ** a, n / /2)
+        return f_exp(a ** a, n //2)
 
 print(a, "в степени", n, "=", f_exp(a, n))
