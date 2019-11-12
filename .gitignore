@@ -1,1 +1,32 @@
-# Created by .ignore support plugin (hsz.mobi)
+# Создано https://www.gitignore.io/api/osx
+# Изменить на https://www.gitignore.io/?templates=osx
+
+### OSX ###
+# Генеральная
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Значок должен заканчиваться двумя \ r
+Икона
+
+# Миниатюры
+._ *
+
+# Файлы, которые могут появиться в корне тома
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Каталоги, потенциально созданные на удаленном ресурсе AFP
+.AppleDB
+.AppleDesktop
+Сетевая папка для мусора
+Временные предметы
+.apdisk
+
+# Конец https://www.gitignore.io/api/osx
