@@ -29,7 +29,10 @@
 Временные предметы
 .apdisk
 
+# Конец https://www.gitignore.io/api/osx
+
 # Добавляем еще то, что лезет постоянно
 .idea
 
-# Конец https://www.gitignore.io/api/osx
+# Олег тоже хочет кое-что игнорить
+venv
